@@ -140,7 +140,7 @@ body {
   background-color: #1f1b1b;
   color: #dbacac;
   padding: 1rem 0;
-  text-align: center;
+  text-align: left;
   margin-top: auto; /* This makes sure the footer sticks to the bottom */
 }
 
