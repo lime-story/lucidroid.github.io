@@ -240,6 +240,114 @@ main {
   gap: 2rem;
 }
 
+/* 모바일 반응형 스타일 */
+@media (max-width: 768px) {
+  /* 헤더 */
+  .header .container {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .logo-container {
+    margin-bottom: 1rem;
+    justify-content: center;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  /* 히어로 섹션 */
+  .hero {
+    margin: 2rem auto;
+    padding: 0 1rem;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .tagline {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+  }
+
+  /* 명령어 페이지 */
+  .commands-page {
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+
+  .commands-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  /* 명령어 상세 페이지 */
+  .command-detail-page {
+    flex-direction: column;
+    margin: 1rem auto;
+    padding: 0 1rem;
+  }
+
+  .sidebar {
+    position: static;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .command-detail {
+    padding: 1rem;
+  }
+
+  /* 푸터 */
+  .footer .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-content {
+    justify-content: center;
+  }
+}
+
+/* 작은 화면 디바이스 (320px ~ 480px) */
+@media (max-width: 480px) {
+  .tagline {
+    font-size: 1.8rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .btn {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+}
 
 /* 명령어 페이지 전용 */
 .commands-page {
