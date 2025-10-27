@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+  background-color: #69495f;
+  color: #fff;
+}
+
+/* 헤더 */
+.header {
+  background-color: #1b1b1b6c;
+  border-bottom: 1px solid #1b1b1b;
+  padding: 1rem 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 48px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.header h1 {
+  color: #ff8ab5;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/* 내비게이션 */
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+.nav a {
+  color: #eee;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.nav a:hover {
+  background-color: #ff8ab5;
+  color: #0f0f0f;
+}
+
+/* 메인 히어로 섹션 */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 5rem auto;
+  padding: 0 2rem;
+
+  /* 👇 이 줄을 추가하세요 */
+  gap: 7rem; /* 글과 이미지 사이 여백 (원하는 만큼 조정 가능, 예: 5rem, 6rem 등) */
+}
+.hero-content {
+  max-width: 550px;
+}
+
+.tagline {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #ffb8d8;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  color: #d6d6d6;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 0.8rem 1.6rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn.primary {
+  background-color: #ff8ab5;
+  color: #0f0f0f;
+}
+
+.btn.primary:hover {
+  background-color: #ffb8d8;
+  transform: translateY(-2px);
+}
+
+.btn.secondary {
+  background-color: #2a2a2a;
+  color: #f1f1f1;
+}
+
+.btn.secondary:hover {
+  background-color: #3a3a3a;
+  transform: translateY(-2px);
+}
+
+/* 이미지 */
+.hero-image img {
+  max-width: 550px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+}
+
+/* 푸터 */
+.footer {
+  background-color: #141414;
+  border-top: 1px solid #2a2a2a;
+  padding: 2rem 1rem;
+}
+
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer h3 {
+  color: #ff8ab5;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer a {
+  color: #b8b8b8;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #ffffff;
+}
+
+.footer p {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 메인 영역이 화면을 꽉 채우도록 설정 */
+main {
+  flex: 1;
+}
+
+/* 푸터 */
+.footer {
+  background-color: #141414;
+  border-top: 1px solid #2a2a2a;
+  padding: 2rem 1rem;
+  color: #b8b8b8;
+  margin-top: auto; /* 핵심 포인트! */
+}
+
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer h3 {
+  color: #ff8ab5;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer a {
+  color: #b8b8b8;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #ffffff;
+}
+
+.footer p {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+
+/* 명령어 페이지 전용 */
+.commands-page {
+  max-width: 1100px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+/* 상단 타이틀 */
+.commands-hero h2 {
+  font-size: 2.5rem;
+  color: #ffb8d8;
+  margin-bottom: 0.5rem;
+}
+
+.commands-hero p {
+  color: #ccc;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+/* 안내 배너 */
+.alert-box {
+  background-color: #3a2f36;
+  color: #ffdce6;
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 0.95rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* 명령어 카드들 */
+.commands-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.command-card {
+  background-color: #2a1f26;
+  border-radius: 15px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.command-card:hover {
+  transform: translateY(-6px);
+  background-color: #3a2a34;
+}
+
+.command-card .icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.8rem;
+}
+
+.command-card h3 {
+  color: #ff8ab5;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.command-card p {
+  color: #cfcfcf;
+  font-size: 0.95rem;
+}
+
+/* 현재 페이지 표시 */
+.nav a.active {
+  background-color: #ff8ab5;
+  color: #0f0f0f;
+}
+
+
+/* ─────────────── 명령어 상세 페이지 ─────────────── */
+
+.command-detail-page {
+  display: flex;
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 0 2rem;
+  gap: 2rem;
+}
+
+/* 사이드바 */
+.sidebar {
+  flex: 0 0 230px;
+  background-color: #1b1b1b6c;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  height: fit-content;
+  position: sticky;
+  top: 100px;
+}
+
+.sidebar h3 {
+  color: #ff8ab5;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.sidebar a {
+  display: block;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #ddd;
+  transition: background 0.3s ease;
+  text-align: left;
+}
+
+.sidebar a:hover {
+  background-color: #3a2a34;
+}
+
+.sidebar a.active {
+  background-color: #ff8ab5;
+  color: #111;
+  font-weight: 600;
+}
+
+/* 명령어 본문 */
+.command-detail {
+  flex: 1;
+  background-color: #1b1b1b6c;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+
+.command-detail h2 {
+  color: #ffb8d8;
+  font-size: 2rem;
+  margin-bottom: 0.4rem;
+}
+
+.command-detail .subtitle {
+  color: #bbb;
+  margin-bottom: 1.2rem;
+}
+
+/* 공통 경고 박스 재사용 */
+.command-detail .alert-box {
+  background-color: #3a2f36;
+  color: #ffdce6;
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+}
+
+/* 섹션 */
+.command-section {
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.command-section h3 {
+  color: #ff8ab5;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.3rem;
+}
+
+.command-section p {
+  color: #ddd;
+  line-height: 1.6;
+}
+
+/* 코드 블록 */
+code {
+  background-color: #2a2a2a;
+  color: #ffb8d8;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.95rem;
+}
+
