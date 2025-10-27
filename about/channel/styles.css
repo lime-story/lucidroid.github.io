@@ -281,18 +281,23 @@ main {
 }
 
 .command-card {
-  background-color: #2a1f26;
-  border-radius: 15px;
-  padding: 2rem 1.5rem;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.4);
-  transition: transform 0.2s ease, background 0.3s ease;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .command-card:hover {
   transform: translateY(-6px);
-  background-color: #3a2a34;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
-
+.command-card {
+  background-color: #1b1b1b6c;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  text-align: center;
+}
 .command-card .icon {
   font-size: 2rem;
   display: block;
